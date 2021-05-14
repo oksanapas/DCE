@@ -181,18 +181,64 @@ document.getElementById("button8").style.background = "#4CAF50";
 }
   </script>
 <style>
+.part1 {
+  position: relative;
+  background: #F5EEF8;
+  border: 18px solid #F5EEF8;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 20%;
+  height: 250px;
+}
 
-.all {display:block;
+.part2 {
+  position: relative;
+  background: lightgreen;
+  border: 18px solid lightgreen;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 0px;
+  height: 250px;
+}
+
+.part3 {
+  position: relative;
+  background: lightblue;
+  border: 18px solid lightblue;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 0px;
+  height: 250px;
+}
+
+.part4 {
+  position: relative;
+  background: #F9E79F;
+  border: 18px solid #F9E79F;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 20%;
+  height: 250px;
+}
+
+.all {
+  display: block;
   column-count: 1;
-  font-family:Comfortaa;
+  font-family: Comfortaa;
 }
+
 .tema {
-  font-size:large;
-  text-align:center;
+  font-size: large;
+  text-align: center;
 }
-.item{
-  padding:5px;
-  margin:3px;
+
+.item {
+  padding: 3px;
+  margin: 3px;
 }
 
 .group1 {
@@ -226,7 +272,8 @@ document.getElementById("button8").style.background = "#4CAF50";
 
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -234,8 +281,9 @@ document.getElementById("button8").style.background = "#4CAF50";
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin:3px;
+  margin: 3px;
 }
+
 </style>
 </head>
 <body>
@@ -250,7 +298,9 @@ document.getElementById("button8").style.background = "#4CAF50";
 
 <table>
 <tr>
- <td width=50% valign=top> 
+ <td width=50% valign=bottom> 
+<div class="part1">
+
 
   <div class="display1 group1">
   <div class="item" id="display1">
@@ -265,9 +315,13 @@ document.getElementById("button8").style.background = "#4CAF50";
 <div class="display3 group1">
   <div class="item" id="display3">Визнання цінності демократії, справедливості, рівності та верховенства права</div>
 </div>
+
+</div>
 </td>
 
 <td>
+
+<div class="part3">
 
 
 <div class="display12 group3">
@@ -293,6 +347,7 @@ document.getElementById("button8").style.background = "#4CAF50";
 <div class="display17 group3">
   <div class="item" id="display17">Прийняття невизначеності та неоднозначності</div>
 </div>
+</div>
 </td>
 
 </tr>
@@ -300,6 +355,7 @@ document.getElementById("button8").style.background = "#4CAF50";
 
 <tr>
 <td>
+<div class="part2">
 <div class="display4 group2">
   <div class="item"  id="display4">Уміння самостійно вчитися</div>
 </div>
@@ -311,7 +367,6 @@ document.getElementById("button8").style.background = "#4CAF50";
 <div class="display6 group2">
   <div class="item"  id="display6">Вміння слухати та спостерігати</div>
 </div>
-
 <div class="display7 group2">
   <div class="item"  id="display7">Емпатія</div>
 </div>
@@ -331,10 +386,11 @@ document.getElementById("button8").style.background = "#4CAF50";
 <div class="display11 group2">
   <div class="item" id="display11">Уміння вирішувати конфлікти</div>
 </div>
-
+</div>
 </td>
 
 <td width=50% valign=top>
+<div class="part4">
 
 <div class="display18 group4">
   <div class="item" id="display18">Знання самого себе та критична самооцінка</div>
@@ -347,7 +403,7 @@ document.getElementById("button8").style.background = "#4CAF50";
 <div class="display20 group4">
   <div class="item" id="display20">Знання й критичне розуміння світу: політики, права, прав людини, культури, релігії, історії, ЗМІ, економіки тощо</div>
 </div>
-  
+</div>
   </td>
 </tr>
 </table>
