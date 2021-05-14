@@ -2,7 +2,21 @@
 <head>
   <title>Digital Citizenship Шкільне життя онлайн</title>
   <script>
-  var b1=0;
+function sss() {
+
+var s1 = document.getElementById('part03').clientHeight; 
+var s2=s1.toString()+"px";
+document.getElementById('part01').style.height=s2;
+document.getElementById('part03').style.height=s2;
+
+var s1 = document.getElementById('part02').clientHeight; 
+var s2=s1.toString()+"px";
+document.getElementById('part04').style.height=s2;
+document.getElementById('part02').style.height=s2;
+}
+
+
+var b1=0;
 function myFunction1() {
 if (b1==0){
 document.getElementById("button1").style.background = "navy";
@@ -189,7 +203,7 @@ document.getElementById("button8").style.background = "#4CAF50";
   border-top-right-radius: 20%;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 20%;
-  height: 250px;
+  padding: 10px;
 }
 
 .part2 {
@@ -200,7 +214,7 @@ document.getElementById("button8").style.background = "#4CAF50";
   border-top-right-radius: 0px;
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 0px;
-  height: 250px;
+  padding: 10px;
 }
 
 .part3 {
@@ -211,7 +225,7 @@ document.getElementById("button8").style.background = "#4CAF50";
   border-top-right-radius: 0px;
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 0px;
-  height: 250px;
+padding: 10px;
 }
 
 .part4 {
@@ -222,7 +236,7 @@ document.getElementById("button8").style.background = "#4CAF50";
   border-top-right-radius: 20%;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 20%;
-  height: 250px;
+  padding: 10px;
 }
 
 .all {
@@ -237,35 +251,35 @@ document.getElementById("button8").style.background = "#4CAF50";
 }
 
 .item {
-  padding: 3px;
-  margin: 3px;
+  padding: 1px;
+  margin: 1px;
 }
 
 .group1 {
   background-color: #F5EEF8;
   border-color: #F5EEF8;
-  border-width: 0;
+  border-width: 1;
   border-style: solid;
 }
 
 .group2 {
   background-color: lightgreen;
   border-color: lightgreen;
-  border-width: 0;
+  border-width: 1;
   border-style: solid;
 }
 
 .group3 {
   background-color: lightblue;
   border-color: lightblue;
-  border-width: 0;
+  border-width: 1;
   border-style: solid;
 }
 
 .group4 {
   background-color: #F9E79F;
   border-color: #F9E79F;
-  border-width: 0;
+  border-width: 1;
   border-style: solid;
 }
 
@@ -284,9 +298,12 @@ document.getElementById("button8").style.background = "#4CAF50";
   margin: 3px;
 }
 
+
 </style>
 </head>
-<body>
+<body onload="sss()">
+
+
 <button onclick="myFunction1()" class="button" id="button1">Доступне та цікаве онлайн-навчання</button>
 <button onclick="myFunction2()" class="button" id="button2">Оцінювання навчання онлайн</button>
 <button onclick="myFunction3()" class="button" id="button3">Критичне оцінювання інформації</button>
@@ -298,8 +315,8 @@ document.getElementById("button8").style.background = "#4CAF50";
 
 <table>
 <tr>
- <td width=50% valign=bottom> 
-<div class="part1">
+ <td width=50% valign=bottom > 
+<div class="part1" id="part01">
 
 
   <div class="display1 group1">
@@ -319,11 +336,8 @@ document.getElementById("button8").style.background = "#4CAF50";
 </div>
 </td>
 
-<td>
-
-<div class="part3">
-
-
+<td >
+<div class="part3" id="part03">
 <div class="display12 group3">
   <div class="item" id="display12">Відкритість до інших культур, переконань і світогляду інших людей</div>
 </div>
@@ -355,7 +369,7 @@ document.getElementById("button8").style.background = "#4CAF50";
 
 <tr>
 <td>
-<div class="part2">
+<div class="part2" id="part02">
 <div class="display4 group2">
   <div class="item"  id="display4">Уміння самостійно вчитися</div>
 </div>
@@ -390,7 +404,7 @@ document.getElementById("button8").style.background = "#4CAF50";
 </td>
 
 <td width=50% valign=top>
-<div class="part4">
+<div class="part4" id="part04">
 
 <div class="display18 group4">
   <div class="item" id="display18">Знання самого себе та критична самооцінка</div>
@@ -407,5 +421,6 @@ document.getElementById("button8").style.background = "#4CAF50";
   </td>
 </tr>
 </table>
+
 </body>
 </html>
